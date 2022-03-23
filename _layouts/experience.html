@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<div class="row align-items-center">
+    <div class="col-md-5 mb-5">
+      <img src="/assets/images/experiences/{{ page.image }}" alt="{{ page.title }}" class="img-fluid">
+    </div>
+    <div class="offset-md-1 col-md-6">
+        <h2>{{ page.title }}</h2>
+        <h3>{{ page.subtitle }}</h3>
+        <p>{{ page.description }}</p>
+        <p><small>{{ page.mention }}</small></p>
+        <a href="{{ page.link }}" target="_blank" rel="noopener" class="btn btn-primary">
+          <span>Vivre l'expérience</span>
+        </a>
+    </div>
+</div>
+
+<hr>
+
+<div class="row align-items-center">
+  <div class="col-md-1 col-3">
+    {% if page.previous.url %}
+      {% unless page.previous.locked %}
+        <a href="{{ page.previous.url }}">
+          <img src="/assets/images/experiences/{{ page.previous.image }}" alt="{{ page.previous.title }}" class="img-fluid">
+        </a>
+      {% endunless %}
+    {% endif %}
+  </div>
+  <div class="col-md-5 col-9">
+    {% if page.previous.url %}
+      {% unless page.previous.locked %}
+        <a href="{{ page.previous.url }}" class="link">
+            {{ page.previous.title }}
+        </a>
+      {% endunless %}
+    {% endif %}
+  </div>
+  <div class="col-md-5 col-9 text-right">
+    {% if page.next.url %}
+      {% unless page.next.locked %}
+        <a href="{{ page.next.url }}" class="link">
+          {{ page.next.title }}
+        </a>
+      {% endunless %}
+    {% endif %}
+  </div>
+  <div class="col-md-1 col-3">
+    {% if page.next %}
+      {% unless page.next.locked %}
+        <a href="{{ page.next.url }}">
+          <img src="/assets/images/experiences/{{ page.next.image }}" alt="{{ page.next.title }}" class="img-fluid">
+        </a>
+      {% endunless %}
+    {% endif %}
+  </div>
+</div>
+
+<hr>

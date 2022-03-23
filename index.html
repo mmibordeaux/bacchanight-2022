@@ -1,0 +1,39 @@
+---
+layout: default
+description: (re)Découvrez le Musée des Beaux-Arts au travers d'expériences digitales narratives, imaginées et réalisées par les étudiants MMI de l'IUT Bordeaux Montaigne
+---
+
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <p class="text-center mb-4">
+      Rêves au Musée est une exposition d'histoires interactives mêlant l'art & le rêve dans la ville de Bordeaux.
+      <br>
+      Ces 7 expériences ont été imaginées et réalisées par les étudiants <a href="https://mmibordeaux.com" target="_blank" rel="noreferrer">MMI Bordeaux (Métiers du Multimédia et de l’Internet)</a> à <a href="http://www.iut.u-bordeaux-montaigne.fr/" target="_blank" rel="noreferrer">l'IUT Bordeaux Montaigne</a> en partenariat avec le musée des Beaux-Arts de Bordeaux à l’occasion de la Bacchanight, soirée culturelle et festive du musée dédiée aux étudiants !
+    </p>
+    <p class="text-center mb-5">
+      <small>Pour un meilleur confort et expérience de visite, ces expériences ont été conçues pour une navigation sur ordinateur (et non mobile).</small>
+    </p>
+  </div>
+</div>
+<hr>
+<div class="row justify-content-center mt-5">
+  {% for experience in site.experiences %}
+    <div class="col-12 col-sm-3">
+      <div class="card {% if experience.locked %} card--locked {% endif %} mb-4 border-0 bg-light pb-1 text-center">
+        <img src="assets/images/experiences/{{ experience.image }}" alt="{{ experience.title }}" class="card-img">
+        <p class="card-text p-3">
+          {% if experience.locked %}
+            <small>
+              {{ experience.title}}
+            </small>
+          {% else %}
+            <a href="{{ experience.url }}" class="stretched-link">
+              <small>{{ experience.title}}</small>
+            </a>
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<hr>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <meta name="description" content="{{ page.description }}"/>
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <meta name="og:title" content="{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}"/>
+    <meta name="og:type" content="website"/>
+    <meta name="og:url" content="https://bacchanight.mmibordeaux.com"/>
+    <meta name="og:image" content="https://bacchanight.mmibordeaux.com/assets/images/cover-reves-musee.jpg"/>
+    <meta name="og:site_name" content="{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}"/>
+    <meta name="og:description" content="{{ page.description }}"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1 class="mt-5 mb-1"><a href="/">Rêves au Musée</a></h1>
+        <div class="text-center mb-5 logos">
+          <img src="/assets/images/bacchanight-logo.png" alt="Bacchanight logo" width="250">
+          <span>•</span>
+          <img src="/assets/images/mmi-logo.svg" alt="MMI Bordeaux" width="100">
+        </div>
+        {{ content }}
+        <footer class="text-center small text-muted mt-5">
+
+          <div class="text-center">
+            <a href="https://www.facebook.com/events/1072043899946930" target="_blank" rel="noreferrer">
+              <img src="/assets/images/bacchanight-logo.png" alt="Bacchanight logo" width="250">
+            </a>
+          </div>
+          <div class="text-center">
+            <a href="http://www.musba-bordeaux.fr/" target="_blank" rel="noreferrer">
+              <img src="/assets/images/musee-des-beaux-arts.png" alt="Musée des Beaux Arts de Bordeaux" width="100">
+            </a>
+            <a href="https://mmibordeaux.com" target="_blank" rel="noreferrer">
+              <img src="/assets/images/mmi-logo.svg" alt="MMI Bordeaux" width="100">
+            </a>
+            <a href="https://www.bordeaux.fr/" target="_blank" rel="noreferrer">
+              <img src="/assets/images/mairie-bordeaux.png" alt="Logo de la ville de Bordeaux" width="100">
+            </a>
+          </div>
+          <p class="mt-5">
+            <a href="https://mmibordeaux.com/mentions-legales" target="_blank" rel="noreferrer">Mentions légales</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

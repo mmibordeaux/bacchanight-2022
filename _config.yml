@@ -1,0 +1,40 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "" # the name of your site, e.g. ACME Corp.
+collections:
+  experiences: 
+    output: true
+    permalink: /:slug
+
+exclude: ['node_modules', '_js', 'README.md']
+picture:
+  ignore_missing_images: true
+
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "experiences"
+    values:
+      layout: "experience"
+
+plugins:
+  - jekyll-minifier
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+jekyll-minifier:
+  remove_spaces_inside_tags: true
+  remove_multi_spaces: true
+  remove_intertag_spaces: true
+  remove_comments: true
+  compress_css: false
+  compress_javascript: true
