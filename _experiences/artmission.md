@@ -6,7 +6,7 @@ description: >-
 
 link: https://artmission.netlify.app/
 mention: >-
-    Vous devez vous trouvez au musée pour vivre pleinement l'expérience. L'expérience a été conçue pour une navigation sur mobile (et non sur ordinateur).
+    Vous devez vous trouver au musée pour vivre pleinement l'expérience. L'expérience a été conçue pour une navigation sur mobile (et non sur ordinateur).
 release: 29/03/2021
 locked: false
 ---
