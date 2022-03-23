@@ -6,7 +6,7 @@ description: >-
 
 link: https://heritages.netlify.app/
 mention: >-
-    Pour un meilleur confort et expérience de visite, l'expérience a été conçue pour une navigation sur ordinateur (et non mobile).
+    Pour un meilleur confort et expérience de visite, l'expérience a été conçue pour une navigation sur mobile (et non sur ordinateur).
 release: 29/03/2021
 locked: false
 ---
