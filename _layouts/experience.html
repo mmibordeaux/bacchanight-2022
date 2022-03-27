@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="row align-items-center">
+<div class="row align-items-center experience">
     <div class="col-md-5 mb-5">
       <img src="/assets/images/experiences/{{ page.image }}" alt="{{ page.title }}" class="img-fluid">
     </div>
@@ -10,9 +10,15 @@ layout: default
         <h3>{{ page.subtitle }}</h3>
         <p>{{ page.description }}</p>
         <p><small>{{ page.mention }}</small></p>
+        
         <a href="{{ page.link }}" target="_blank" rel="noopener" class="btn btn-primary">
           <span>Vivre l'expérience</span>
         </a>
+        {% if page.video %}
+        <div href="#" onclick="showPopin('video-popin');" class="btn btn-primary">
+          <span>Voir la bande annonce</span>
+        </div>
+        {% endif %}
     </div>
 </div>
 
@@ -58,3 +64,29 @@ layout: default
 </div>
 
 <hr>
+
+
+{% if page.video %}
+<div id="video-popin" class="popin">
+  <div class="popin__content">
+    <video src="/assets/images/experiences/{{ page.video }}" controls="true" ></video>
+  </div>
+  <div class="popin__overlay" onclick="hidePopin('video-popin');"></div>
+  <div class="popin__close" onclick="hidePopin('video-popin');">Fermer</div>
+</div>
+
+<script>
+  function showPopin(id) {
+    var popin = document.getElementById(id);
+    var video = popin.querySelector('video');
+    popin.classList.add('is-visible');
+    if (video) video.play();
+  }
+  function hidePopin(id) {
+    var popin = document.getElementById(id);
+    var video = popin.querySelector('video');
+    popin.classList.remove('is-visible');
+    if (video) video.pause();
+  }
+</script>
+{% endif %}
