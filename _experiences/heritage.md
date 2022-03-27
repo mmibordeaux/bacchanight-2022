@@ -1,8 +1,9 @@
 ---
 title: Héritage
-image: kurt.png
+image: heritage.jpg
+video: heritage.mp4
 description: >-
-    Depuis plusieurs générations, une tradition familiale perdure chez les De Lacroix : chaque père doit réaliser le portrait de son fils qui lui sera offert en guise d’héritage. Non seulement vectrice de reconnaissance, cette habitude est aussi un moyen de transmission de savoir-faire de père en fils. Jusqu'à ce que...
+    Depuis plusieurs générations, une tradition familiale perdure chez les Richards : chaque père doit réaliser le portrait de son fils qui lui sera offert en guise d’héritage. Non seulement vectrice de reconnaissance, cette habitude est aussi un moyen de transmission de savoir-faire de père en fils. Vous rencontrerez Édouard, le père et son fils, Loïs autour d’une discussion quelque peu épineuse. Plongez-vous au cœur de cette expérience et aidez les deux personnages à trouver un terrain d’entente !
 
 link: https://heritages.netlify.app/
 mention: >-
