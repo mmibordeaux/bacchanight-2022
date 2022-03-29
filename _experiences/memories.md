@@ -1,6 +1,6 @@
 ---
 title: Memories
-image: kurt.png
+image: memories.png
 description: >-
     J.J est amnésique, chaque jour il se réveille en ayant oublié toute sa vie. Il se retrouve quotidiennement perdu dans le musée de Bordeaux Aquitaine. Petit à petit, en regardant les œuvres, la mémoire lui revient et se rappelle...
 
