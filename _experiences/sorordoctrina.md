@@ -1,6 +1,6 @@
 ---
 title: Sorordoctrina
-image: kurt.png
+image: sorordoctrina.jpg
 link: https://sorordoctrina.netlify.app/
 description: >-
     Maria Anna Mozart vient de mourir. Entre la vie et la mort, dans un état transitoire, elle est confrontée à une dernière épreuve : avouer son plus grand secret. Elle va devoir dévoiler la vérité sur la mort de son petit frère, Wolfgang Amadeus Mozart...
